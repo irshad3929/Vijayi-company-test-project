@@ -20,10 +20,11 @@
         </select>
       </td>
       <td>
-        <button class="add" (click)="addRow()" [disabled]="selectedItems.length >= 8">Add</button>
+      
         <button class="remove" (click)="removeRow(i)" [disabled]="selectedItems.length <= 1">Remove</button>
       </td>
     </tr>
+    <tr>  <button class="add" (click)="addRow()" [disabled]="selectedItems.length >= 8">Add</button></tr>
   </tbody>
 </table>
 <button class="show-order" (click)="showOrder()">Show Order</button>
