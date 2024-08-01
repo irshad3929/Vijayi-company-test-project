@@ -1,0 +1,9 @@
+<table *ngIf="orderItems.length > 0">
+  <tbody>
+    <tr *ngFor="let item of orderItems">
+      <td>{{ item.product }}</td>
+      <td>{{ item.quantity }}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="readOrder()">What is my Order?</button>
